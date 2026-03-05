@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useAuth } from "@/contexts/AuthContext";
@@ -20,10 +21,13 @@ export default function Sidebar() {
   return (
     <aside className="w-64 bg-gray-900 text-white min-h-screen flex flex-col">
       <div className="p-6 border-b border-gray-700">
-        <Link href="/scheduler" className="text-2xl font-bold tracking-wide">
-          PEER
+        <Link href="/scheduler" className="flex items-center gap-3">
+          <Image src="/logo.png" alt="PEER" width={48} height={28} className="rounded" />
+          <div>
+            <span className="text-2xl font-bold tracking-wide">PEER</span>
+            <p className="text-xs text-gray-400">Connect, Learn, Grow</p>
+          </div>
         </Link>
-        <p className="text-xs text-gray-400 mt-1">Connect, Learn, Grow</p>
       </div>
 
       <nav className="flex-1 p-4 space-y-1">

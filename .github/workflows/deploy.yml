@@ -58,7 +58,7 @@ jobs:
       - name: Build
         working-directory: peer-frontend
         env:
-          NEXT_PUBLIC_API_URL: http://${{ secrets.EC2_HOST }}.nip.io:8080
+          NEXT_PUBLIC_API_URL: http://${{ secrets.EC2_HOST }}.nip.io
         run: npm run build
 
       - name: Package standalone

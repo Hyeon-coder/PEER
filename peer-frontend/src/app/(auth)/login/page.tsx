@@ -42,6 +42,7 @@ function LoginContent() {
     <div className="min-h-screen flex items-center justify-center bg-gray-950">
       <div className="max-w-md w-full mx-4">
         <div className="text-center mb-10">
+          <img src="/logo.png" alt="PEER" className="w-32 h-auto mx-auto mb-4 rounded-lg" />
           <h1 className="text-5xl font-bold text-white mb-3">PEER</h1>
           <p className="text-gray-400 text-lg">Connect, Learn, and Grow Together</p>
           <p className="text-gray-500 text-sm mt-2">
