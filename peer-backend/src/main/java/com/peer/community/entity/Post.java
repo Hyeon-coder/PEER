@@ -75,4 +75,9 @@ public class Post extends BaseTimeEntity {
     public void blind() {
         this.blinded = true;
     }
+
+    public void unblind() {
+        this.blinded = false;
+        this.reportCount = 0;
+    }
 }

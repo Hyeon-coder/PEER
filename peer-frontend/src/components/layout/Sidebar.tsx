@@ -14,6 +14,8 @@ const navItems = [
   { href: "/profile", label: "Profile", icon: "👤" },
 ];
 
+const adminNavItem = { href: "/admin", label: "Admin", icon: "🛡️" };
+
 export default function Sidebar() {
   const pathname = usePathname();
   const { user, logout } = useAuth();
@@ -48,6 +50,19 @@ export default function Sidebar() {
             </Link>
           );
         })}
+        {user?.role === "ADMIN" && (
+          <Link
+            href={adminNavItem.href}
+            className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${
+              pathname.startsWith("/admin")
+                ? "bg-blue-600 text-white"
+                : "text-gray-300 hover:bg-gray-800 hover:text-white"
+            }`}
+          >
+            <span>{adminNavItem.icon}</span>
+            <span>{adminNavItem.label}</span>
+          </Link>
+        )}
       </nav>
 
       {user && (

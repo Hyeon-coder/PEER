@@ -60,6 +60,10 @@ public class User extends BaseTimeEntity {
         this.role = Role.ADMIN;
     }
 
+    public void demoteToUser() {
+        this.role = Role.USER;
+    }
+
     private int calculateLevel(long totalXp) {
         // Level N requires N^2 * 10 cumulative XP
         int lvl = 0;
