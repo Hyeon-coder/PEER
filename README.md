@@ -293,9 +293,3 @@ ssh ec2-user@<host> "sudo systemctl restart peer-frontend"
 curl -s http://localhost:8080/actuator/health
 curl -s -o /dev/null -w '%{http_code}' http://localhost:3000/
 ```
-
----
-
-## License
-
-This is a personal project developed by **Juhyeon Lee**.
