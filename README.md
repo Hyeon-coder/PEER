@@ -75,15 +75,15 @@ An all-in-one platform for developers — **Scheduler + Algorithm Peer Review + 
             /api/*      │         │   /*
                         │         │
               ┌─────────▼──┐  ┌───▼──────────┐
-              │ Spring Boot │  │   Next.js    │
-              │   (:8080)   │  │   (:3000)    │
-              └──┬──────┬───┘  │  standalone  │
-                 │      │      └──────────────┘
+              │ Spring Boot│  │   Next.js    │
+              │   (:8080)  │  │   (:3000)    │
+              └──┬──────┬──┘  │  standalone  │
+                 │      │     └──────────────┘
          ┌───────▼──┐ ┌─▼──────────┐
-         │ Redis 7   │ │ PostgreSQL │
-         │ (Lettuce)  │ │ 16 (RDS)  │
-         │ JWT cache  │ │ eu-north-1│
-         └───────────┘ └───────────┘
+         │ Redis 7  │ │ PostgreSQL │
+         │ (Lettuce)│ │  16 (RDS)  │
+         │ JWT cache│ │ eu-north-1 │
+         └──────────┘ └────────────┘
 ```
 
 ### API Request Flow
