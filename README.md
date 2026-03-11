@@ -11,6 +11,14 @@ An all-in-one platform for developers — **Scheduler + Algorithm Peer Review + 
 
 ---
 
+## Demo
+
+![Demo](assets/demo.gif)
+
+*Login → Calendar → Todos → Community → Profile*
+
+---
+
 ## Features
 
 ### 1. Scheduler
